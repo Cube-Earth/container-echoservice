@@ -1,7 +1,7 @@
 #!/bin/sh
 while true
 do
-	nc -l 0.0.0.0 8080 << EOF
+	nc -W0 -l 0.0.0.0 8080 << EOF
 HTTP/1.1 200 OK
 Content-Type: text/html
 
